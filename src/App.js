@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import Section1 from "./components/Section1";
+import Section2 from "./components/Section2";
+import { scroller } from "react-scroll";
+
+
 
 function App() {
+  const scrollDown = () => {
+    scroller.scrollTo("sec2", {
+      duration: 800,
+      delay: 0,
+      smooth: "easeInOutQuart",
+    });
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Section1 scrollDown={scrollDown} />
+      <div id="sec2">
+      <Section2 />
+      </div>
     </div>
   );
 }
