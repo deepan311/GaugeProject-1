@@ -2,7 +2,7 @@ import React from "react";
 import "../index.css";
 import { MdVerifiedUser } from "react-icons/md";
 import { BsFillCheckCircleFill } from "react-icons/bs";
-import Sec2 from '../asset/Sec2.png'
+import Sec2 from "../asset/Sec2.png";
 function Section2() {
   return (
     <div>
@@ -50,29 +50,30 @@ function Section2() {
               </div>
             </div>
           </div>
-          
+
           <div className="w-full mt-6">
             <div className="flex ">
               <BsFillCheckCircleFill className="text-[39px] md:text-[30px] text-green-400" />
               <div className="ml-4 ">
                 <h3 className=" text-xl md:text-2xl font-bold text-gray-900">
-                Compensation For Service Delays
+                  Compensation For Service Delays
                 </h3>
                 <h3 className=" text-[16px] md:text-[20px] my-4 text-gray-500">
-                You are entitled to a compensation of <span className="font-bold"> 100 Rs/Day</span> if service is delayed for more than 24 hours.
+                  You are entitled to a compensation of{" "}
+                  <span className="font-bold"> 100 Rs/Day</span> if service is
+                  delayed for more than 24 hours.
                 </h3>
               </div>
             </div>
           </div>
 
-          <button className='px-10 my-4  bg-blue-500 hover:bg-blue-700 py-4 rounded-full text-md md:text-xl text-white'>
-Next: Smart Water Conservation</button>
-          
-
+          <button className="px-10 my-4  bg-blue-500 hover:bg-blue-700 py-4 rounded-full text-md md:text-xl text-white">
+            Next: Smart Water Conservation
+          </button>
         </div>
 
         <div className="col-span-2 order-first md:order-last md:col-span-1 flex gap-10 justify-center items-center flex-col mb-10">
-          <img src={Sec2} alt="" />
+          <img src={Sec2} alt="section2" />
         </div>
       </div>
     </div>
